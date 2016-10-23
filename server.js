@@ -17,6 +17,9 @@ app.get('/admin', function (req, res) {
 app.get('/contact', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
+app.get('/parking', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'parking.html'));
+});
 app.get('/catering', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'catering.html'));
 });
