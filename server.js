@@ -5,14 +5,14 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+app.get('/admin', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'admin.html'));
 });
 app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
-app.get('/snehitha2', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'snehitha2.html'));
+app.get('/', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
