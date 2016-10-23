@@ -29,7 +29,9 @@ app.get('/decorations', function (req, res) {
 app.get('/register', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'register.html'));
 });
-
+app.get('/security', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'security.html'));
+});
 
 
 
