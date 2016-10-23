@@ -17,6 +17,10 @@ app.get('/admin', function (req, res) {
 app.get('/contact', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'contact.html'));
 });
+app.get('/catering', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'catering.html'));
+});
+
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
