@@ -20,6 +20,9 @@ app.get('/contact', function (req, res) {
 app.get('/catering', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'catering.html'));
 });
+app.get('/decorations', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'decorations.html'));
+});
 
 
 app.get('/ui/style.css', function (req, res) {
